@@ -1,0 +1,158 @@
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background: #f5f8fb;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  background: #7ea7a9;
+  margin: 1px 0 1px 1px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-shrink: 0;
+  margin: 1px 0 1px 1px;
+  background: #7ea7a9;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.user,
+.members-list,
+.messages,
+.rooms {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.title,
+.members-count {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: white;
+}
+
+.member,
+.chat-title {
+  padding-right: 10px;
+  position: relative;
+  cursor: default;
+}
+
+.member:hover,
+.chat-title:hover {
+  text-decoration: underline;
+}
+
+.messages {
+  flex-shrink: 1;
+  flex-grow: 1;
+  overflow: auto;
+  background-image: url("img1.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+.message {
+  padding: 5px 0;
+  margin: 3px 3px 3px 3px;
+}
+.message .member {
+  display: inline-block;
+}
+
+.message-form {
+  margin: 1px 0 1px 1px;
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  background: #f5f8fb;
+  padding: 10px;
+  border-color: #7ea7a9;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 3px;
+}
+
+.form-input {
+  position: relative;
+  flex-grow: 1;
+  border: 1px solid #7ea7a9;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.form-button {
+  margin: 5px 0 5px 5px;
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #7ea7a9;
+  border: solid 1px transparent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.form-button:hover {
+  background-color: #cbdcde;
+  transition: all 0.1s ease-in-out;
+  color: #5e8d8e;
+  border: 2px solid #7ea7a9;
+  font-weight: bold;
+}
+
+emoji-picker {
+  width: 100%;
+  height: 100%;
+}
+
+.emoji-button {
+  background-color: #7ea7a9;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 1px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+}
+.emoji-button:hover {
+  background-color: #cbdcde;
+  transition: all 0.1s ease-in-out;
+  color: #7ea7a9;
+}

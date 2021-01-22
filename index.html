@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      type="text/javascript"
+      src="https://cdn.scaledrone.com/scaledrone.min.js"
+    ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c597739f7e.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <link rel="icon" href="icon2.png" /> -->
+    <style>
+      .tooltip:not(.shown) {
+          display: none;
+      }
+    </style>
+    <title>Chat seminarski</title>
+  </head>
+  <body>
+    <div class="left">
+      <div class="title">Your name</div>
+      <div class="user"></div>
+      <div class="title">Connected users</div>
+      <div class="members-count"></div>
+      <div class="members-list"></div>
+    </div>
+    <div class="center">
+      <div class="chat-title">General chatroom</div>
+      <div class="messages"></div>
+      <form class="message-form" onsubmit="return false;">
+        <input
+          class="form-input"
+          placeholder="Type your message here..."
+        ></input>
+        <input class="form-button" type="submit" value="Send" />
+      </form>
+    </div>
+    <div class="right">
+      <button class="emoji-button" onclick="toggle()"><i class="fas fa-grin"></i></button>
+      <div class="tooltip" role="tooltip">
+        <emoji-picker class="dark"></emoji-picker>
+      </div>
+    </div>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@1/index.js"></script>    
+    <script src="script.js"></script> 
+  </body>
+</html>
